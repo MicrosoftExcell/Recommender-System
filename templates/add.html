@@ -1,0 +1,32 @@
+<head>
+    <link rel="stylesheet" href='/static/style.css' />
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+</script>
+<title>Book Ratings</title>
+<form method="POST" action="/backhome">
+    <button type="submit" class="button log-out" class="log-out">Log Out</button>
+</form>
+<h1>Add Rating</h1>
+<form method="POST" action="/addrating" class="front-page">
+    <P>Title: <select name="titles">
+            {% for title in titles %}
+            <option value = '{{title}}'>{{title}}</option>
+            {% endfor %}
+          </select>
+        </P>
+    <p>
+    Rating: <select name="rating">
+            <option value = 1>1</option>
+            <option value = 2>2</option>
+            <option value = 3>3</option>
+            <option value = 4>4</option>
+            <option value = 5>5</option>
+          </select>
+        </p>
+    <p><input type="submit" class="button" value="Add Rating"></p>
+</form>
+<form method="POST" action="/backtoprofile"class="front-page">
+    <button type="submit" class="button">Back to Profile</button>
+</form>

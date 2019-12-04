@@ -1,0 +1,53 @@
+body {
+	background: ivory;
+	color: slategray;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 18px;
+}
+h1 {
+	text-align: center;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+    margin-inline-start: 90px;
+    margin-inline-end: 90px;
+	color: slategray;
+}
+h2 {
+	color: slategray;
+	padding: 0px 30px ;
+}
+.warning {
+	color: crimson;
+}
+p {
+	color: slategray;
+}
+.button {
+	background-color: gainsboro;
+	border: none;
+	color: darkslategray;
+	padding: 8px 20px;
+	width: 140px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+.log-out {
+	float: right;
+	width: 90px;
+	border-radius: 4px;
+}
+.front-page {
+	text-align: center;
+}
+.smallbutton {
+	background-color: gainsboro;
+	border: none;
+	color: darkslategray;
+	padding: 4px 20px;
+	width: 70px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	margin-left: 10px;
+}

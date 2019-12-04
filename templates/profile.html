@@ -1,0 +1,35 @@
+<head>
+    <link rel="stylesheet" href='/static/style.css' />
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+</script>
+<title>Book Ratings</title>
+<form method="POST" action="/backhome">
+    <button type="submit" class="button log-out" class="log-out">Log Out</button>
+</form>
+<h1>Profile</h1>
+<h2>Top N Recommendations
+<form method="POST" action="/number">
+    N = <input type="int" id="n" name="n" size="3" value="{{num}}"><input type="submit" class="smallbutton" value="Enter"><br>
+</form></h2>
+<ul>
+{% for book in best_books %}
+    <li>{{book[0]}}: {{book[1]}}</li>
+{% endfor %}
+</ul>
+<h2>Previous Ratings</h2>
+<ul>
+{% for rating in ratings %}
+    <li>{{rating[0]}}: {{rating[1]}}</li>
+{% endfor %}
+</ul>
+<form method="POST" action="/toedit" class="front-page">
+    <input type="submit" class="button" value="Edit Rating">
+</form>
+<form method="POST" action="/toadd" class="front-page">
+    <input type="submit" value="Add Rating" class="button bottom">
+</form>
+<form method="POST" action="/todelete" class="front-page">
+    <input type="submit" value="Delete Rating" class="button bottom">
+</form>
